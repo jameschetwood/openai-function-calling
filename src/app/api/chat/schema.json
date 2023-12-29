@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "getQuestions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question": {"type": "string"},
+          "Answer": {"type": "string"}
+        },
+        "required": ["Question", "Answer"]
+      }
+    }
+  },
+  "required": ["getQuestions"]
+}
