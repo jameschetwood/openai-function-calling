@@ -1,4 +1,5 @@
 "use client";
+// import JSON5 from "json5";
 
 export default function Home() {
   async function callApi() {
@@ -18,6 +19,9 @@ export default function Home() {
       accumulatedText += text;
     }
     console.log({ accumulatedText });
+
+    const parsed = JSON.parse(accumulatedText);
+    console.log({ parsed });
   }
   return (
     <main className={"p-10"}>
