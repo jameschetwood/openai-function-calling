@@ -11,6 +11,7 @@
   "dependencies": {
     "ai": "^2.2.30",
     "json5": "^2.2.3",
+    "jsonrepair": "^3.5.0",
     "next": "14.0.4",
     "openai": "^4.24.1",
     "react": "^18",

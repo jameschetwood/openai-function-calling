@@ -1,5 +1,6 @@
 "use client";
 // import JSON5 from "json5";
+import { jsonrepair } from "jsonrepair";
 
 export default function Home() {
   async function callApi() {
@@ -22,7 +23,9 @@ export default function Home() {
     }
     console.log({ accumulatedText });
 
-    const parsed = JSON.parse(accumulatedText);
+    const repairedJSON = jsonrepair(accumulatedText);
+
+    const parsed = JSON.parse(repairedJSON);
     console.log({ parsed });
   }
   return (
